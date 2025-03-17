@@ -1,167 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Personal_Portifolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<style>
-* {
-box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url();
-  background-color: #081b29;
-  background-origin: padding-box;
-  background-size: 150%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: auto;
-}
-.general-content{
-width: auto;
-background-color: #f3f3f3;
-height: auto;
-}
-.header-links{
-display: flex;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(/home/student/cachedir/packages/hekima_works/pexels-nejc-kosir-108379-338936.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
 
-width: 100%;
-padding: 20px;
-margin-top: 10px;
-border-radius: 5px;
-}
-.logo{
-display: flex;
+    .general-content {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
 
-width: 100%;
-}
-.header-links a{
-display: flex;
-justify-content:space-around;
-width: 50%;
-text-decoration: none;
+    .header-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: rgba(0, 171, 240, 0.2);
+      border-radius: 5px;
+    }
 
-}
-.footer{
-position: relative;
-top: 2vh;
-left: 1vh;
-text-transform: capitalize; 
-display: inline;
-background-color: #00abf0;
-border:2px solid #00abf0; 
-width: 150px;
-font-weight: 600;
-font-family: gerevonda;
-border-radius: 40px;
+    .header-links a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-}
-.footer span{
-background-color: transparent;
-color: black;
-border-radius: 50px;
-height: 40px;
-width: 40px;
-border-color: 1px solid #00abf0;
-}
-.home-portifolio{
-width: inherit;
-height: 100%;
-padding: 20px;
-}
-div.home-portifolio h1{
-display: inline;
-font-size: 56px;
-font-weight: 700;
-font-family: gerevonda;
-color: black;
-width: 600px;
+    .header-links a:hover {
+      background-color: #00abf0;
+      color: black;
+    }
 
-}
-div.home-portifolio h3{
-color: #00abf0;
-font-size: 32px;
-font-weight: 700;
-}
-div.home-portifolio p{
-font-family: high tower;
-margin: 20px 0 40px;
-}
-.home-sci{
-position: absolute;
-bottom: 75px;
-}
-.home-sci a{
-display: inline;
-width: 40px;
-height: auto;
-background: transparent;
-border:2px solid #00abf0;
-z-index: -1;
-}
-@keyframe appear{
-from{
-opacity: 0;
-scale: 0.5;
-}
-to{
-opacity: 1; 
-scale: 1;
-}
-.nio{
-animation: appear 5s linear; 
-animation-timing-function: ease-in-out;
-}
-.jeo{
-height: 20%;
-width: 50%;
-border-radius: 20px;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-}
-</style>
+    .home-portfolio {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    /* Animation for header text */
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+      font-family: "Arial", sans-serif;
+      color: #00abf0;
+      animation: textAnimation 2s ease-in-out;
+    }
+
+    @keyframes textAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h3 {
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 20px 0;
+      color: #f3f3f3;
+    }
+
+    .home-sci {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .home-sci a {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 2px solid #00abf0;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .home-sci a:hover {
+      background-color: #00abf0;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+      border-radius: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #00abf0;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .footer span {
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-<div class="general-content">
-  <div class="header-links">
-  <a href="/home/student/cachedir/packages/hekima_works/iS3xt9oY.jpeg" class="logo">Crarist master</a>
-    <a class="active" href="index.html">Home</a>
-    <a href="contacts.html" class="active">Contact</a>
-    <a href="about us.html" class="active">About us</a>
-    <a href="skills.html" class="active">skills</a>
-   <a href="#experience.html" class="active">expirience</a>
-</div>
-<div class="joe">
-<video autoplay="" loop="">
-<source src="/home/student/cachedir/packages/hekima_works/techonology.mp4" style="height: 20%; width: 50%; border-radius: 20px;">
-</video>
-</div>
-<div class="home-portifolio">
-<div class="nio">
-<h1>hello,i'm crarist master.</h1>
-   <h3>programmer that has a high speed of typing in the world!</h3>
-<p>In this portifolio you may see how work a perfomed in the 
-world.so,the world are going beyond because of science and 
-techonology,exactly without computer worker's the world can't continue
-forward.so this portifolio can show how a perfom my works.
-so you can know what i am doing and so on.<br><br>
-<h2>Thank,you!</h2>
-</div>
-<div class="home-sci">
-    <a href=""><i class='bx bxl-facebook-circle'></i></a>
-    <a href=""><i class='bx bxl-instagram' ></i></a>
-    <a href=""><i class='bx bxl-tiktok'></i></a>
-    <a href=""><i class='bx bxl-yahoo' ></i></a>
-    <a href=""><i class='bx bxl-github'></i></a>
-</div>
-</div>
-</div>
-<div class="footer">
-<span class="word">&copy2025 by crarist master</span>
-</div>
+  <div class="general-content">
+    <div class="header-links">
+      <a href="/home/student/cachedir/packages/hekima_works/iS3xt9oY.jpeg" class="logo">Crarist Master</a>
+      <a href="personal_portifolio.html">Home</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About Us</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+    </div>
+
+    <div class="home-portfolio">
+      <h1>Hello, I'm Crarist Master.</h1>
+      <h3>A programmer with record-breaking typing speed!</h3>
+      <p>In this portfolio, you'll see the incredible work I've performed in the world. Technology is advancing rapidly, and without computer workers, the world wouldn't continue moving forward. This portfolio highlights my contributions and achievements. Thank you for visiting!</p>
+    </div>
+
+    <video autoplay loop>
+      <source src="/home/student/cachedir/packages/hekima_works/techonology.mp4" type="video/mp4">
+    </video>
+
+    <div class="home-sci">
+      <a href=""><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://www.youtube.com/@craristcode"><i class='bx bxl-youtube'></i></a>
+      <a href=""><i class='bx bxl-instagram-alt'></i></a>
+      <a href=""><i class='bx bxl-tiktok'></i></a>
+      <a href=""><i class='bx bxl-yahoo'></i></a>
+      <a href="https://github.com/CraristMaster/computer-science-profile"><i class='bx bxl-github'></i></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>&copy; 2025 by Crarist Master</span>
+  </div>
 </body>
 </html>
