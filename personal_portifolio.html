@@ -13,7 +13,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-image: url(/home/student/cachedir/packages/hekima_works/pexels-nejc-kosir-108379-338936.jpg);
+      background-image: url(/home/student/trash/packages/hekima_works/pexels-nejc-kosir-108379-338936.jpg);
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -62,23 +62,37 @@
       border-radius: 10px;
     }
 
-    /* Animation for header text */
+    /* Updated Text Animations */
+    h1, h3, p {
+      opacity: 0;
+      animation: fadeInUp 2s ease-in-out forwards;
+    }
+
     h1 {
       font-size: 56px;
       font-weight: 700;
-      font-family: "Arial", sans-serif;
       color: #00abf0;
-      animation: textAnimation 2s ease-in-out;
+      animation-delay: 0.5s;
     }
 
-    @keyframes textAnimation {
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      animation-delay: 1s;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 20px 0;
+      animation-delay: 1.5s;
+      color: #f3f3f3;
+    }
+
+    @keyframes fadeInUp {
       0% {
         opacity: 0;
-        transform: translateY(-50px);
-      }
-      50% {
-        opacity: 0.5;
-        transform: translateY(10px);
+        transform: translateY(20px);
       }
       100% {
         opacity: 1;
@@ -86,17 +100,25 @@
       }
     }
 
-    h3 {
-      color: white;
-      font-size: 32px;
-      font-weight: 700;
+    /* Zoom-in-and-out Animation for Image */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      border-radius: 15px;
+      animation: zoomInOut 5s infinite ease-in-out;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 20px 0;
-      color: #f3f3f3;
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
 
     .home-sci {
@@ -150,13 +172,14 @@
 </head>
 <body>
   <div class="general-content">
+    <img src="/home/student/trash/packages/hekima_works/IMG_20240105_165301.jpg" alt="Portfolio Image">
     <div class="header-links">
       <a href="/home/student/cachedir/packages/hekima_works/iS3xt9oY.jpeg" class="logo">Crarist Master</a>
       <a href="personal_portifolio.html">Home</a>
-      <a href="contacts.html">Contact</a>
-      <a href="about us.html">About Us</a>
       <a href="skills.html">Skills</a>
       <a href="experience.html">Experience</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About Us</a>
     </div>
 
     <div class="home-portfolio">
@@ -166,7 +189,7 @@
     </div>
 
     <video autoplay loop>
-      <source src="/home/student/cachedir/packages/hekima_works/techonology.mp4" type="video/mp4">
+      <source src="/home/student/trash/packages/hekima_works/hello wol" type="video/mp4">
     </video>
 
     <div class="home-sci">
